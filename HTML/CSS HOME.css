@@ -1,0 +1,56 @@
+.body{
+    display: flex;
+}
+.c-item{
+    height: 480px;
+}
+.c-img{
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(0.4);
+}
+.no-bullets{
+    list-style-type: none;
+}
+.Teks{
+    color: white;
+}
+footer{
+    color: white;
+}
+.footer_info{
+    width: 90%;
+    margin: 0;
+    display: flex;
+    margin-left: 2%;
+    padding: 25px;
+}
+.footer_info .footer_width{
+    padding: 0 15px;
+}
+.footer_info h2{
+    margin-bottom: 20px;
+}
+.about, .contact{
+    width: 40%;
+}
+.link{
+    width: 20%;
+}
+.socialmedia {
+    padding: 20px;
+   
+}
+.social-media ul li a{
+    display:flex ;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    margin-left: 0;
+}
+.card:hover{
+    transform: scale(1.15);
+}
+.card{
+    transition: all 0.3s;
+}

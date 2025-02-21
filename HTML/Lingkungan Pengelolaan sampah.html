@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="CSS HOME.css">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <title>Home</title>
+        
+    </head>
+    <body>
+       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <script src="HOME.js"></script>
+      <nav class="navbar sticky-top navbar-expand-lg justify-content-center" style="background-color: #12124F;">
+        <div class="container-fluid p-3 px-5">
+          <img src="Foto/Logo Jayapura putih@4x.png" alt="" style="height: 60px;">
+          <ul class="navbar-nav fw-medium navbar-dark me-auto ms-5 fs-5">
+            <li class="nav-item"><a class="nav-link" href="Home.html">Beranda </a></li>
+            <li class="nav-item"><a class="nav-link" href="Bantuan.html">Bantuan </a></li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark me-auto fs-5 dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #12124F;">
+                Berita
+              </button>
+              <ul class="dropdown-menu dropdown-menu-transparent">
+                <li><a class="dropdown-item" href="Lingkungan Pengelolaan sampah.html">Pengelolahan Sampah</a></li>
+                <li><a class="dropdown-item" href="Perikanan.html">Perikanan</a></li>
+                <li><a class="dropdown-item" href="Bawang.html">Pangan dan Tanaman</a></li>
+              </ul>
+            </li>
+        </ul>
+          <form class="d-flex" role="button">
+            <div class="dropdown">
+              
+          </form>
+          
+        </div>
+      </nav>
+  
+    <section class="py-5 bg-light">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xl-8">
+                    <div class=>
+                        <h2 class="display-5 fw-bolder mb-4">Pengelolaan Sampah: Menabung Di Bank Sampah</h2>
+                        <img src="4x/bank sampah.jpg" alt="" class="mb-4">
+                        <p class="lead fw-light">
+                            Salah satu Program dalam upaya pengelolaan lingkungan yang ada di Dinas Lingkungan Hidup Dan Kebersihan Kota Jayapura Daerah adalah Program Bank Sampah. Program  Bank Sampah adalah suatu strategi penerapan dalam pengelolaan sampah ditingkat masyarakat, dengan menyamakan kedudukan sampah serupa dengan uang atau barang yang berharga yang dapat ditabung.  Tujuan dari  didirikannya bank sampah itu sendiri adalah
+
+                                1. untuk memecah  permasalahan sampah yang sampai saat ini belum juga  bisa teratasi dengan baik,
+
+                                2. membiasakan warga agar tidak  membuang sampah sembarangan,
+
+                                3. memotivasi   warga agar mau memilah sampah sehingga lingkungannya  bersih,
+
+                                4. memaksimalkan pemanfaatan barang bekas dengan menanamkan pemahaman pada masyarakat bahwa barang bekas bisa berguna,
+
+                                5. Mengurangi jumlah barang bekas yang terbuang percuma.
+
+                                Sedangkan manfaat dari  Program Bank Sampah itu sendiri adalah, mengurangi jumlah sampah  di lingkungan masyarakat, menambah penghasilan bagi  masyarakat, menciptakan lingkungan yang bersih dan  sehat dan memupuk kesadaran diri masyarakat akan  pentingnya menjaga dan menghargai lingkungan hidup.
+                            
+                                <div class="row">
+                                    <div class="col-lg-12 d-flex align-items-strech">
+                                      <div class="card w-100">
+                                        <div class="card-body">
+                                          <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                                            <div class="mb-3 mb-sm-0">
+                                              <h5 class="card-title fw-semibold">Presentase pengelolaan sampah harian Kota Jayapura</h5>
+                                            </div>
+                                          </div>  
+                                          <div>
+                                            <canvas id="myChart"></canvas>
+                                          </div>
+                                          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                          <script>
+                                            const ctx = document.getElementById('myChart');
+                                          
+                                            new Chart(ctx, {
+                                              type: 'bar',
+                                              data: {
+                                                labels: ['2020', '2021', '2022', '2023',],
+                                                datasets: [{
+                                                  label: 'Ton',
+                                                  data: [250, 255, 260, 265,],
+                                                  borderWidth: 1
+                                                }]
+                                              },
+                                              options: {
+                                                scales: {
+                                                  y: {
+                                                    beginAtZero: true
+                                                  }
+                                                }
+                                              }
+                                            });
+                                          </script>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="py-5">
+      <div class="container">
+          <h3 class="text-center fw-bolder mb-5">Artikel Lainnya</h3>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+              <div class="col">
+                  <div class="card h-100"> 
+                      <a href="Bawang.html\"><img src="Foto/bawang.jpg" class="card-img-top" alt="Hutan Rusak">
+                      <div class="card-body">
+                          <h5 class="card-title">Produksi Bawang yang meningkat</h5>
+                          <p class="card-text">Produksi bawang yang meningkat di jayapura</p>
+                      </div>
+                  </div> </a>
+              </div>
+
+              <div class="col">
+                  <div class="card h-100">
+                   <a href="Perikanan.html">   <img src="Foto/perairan.jpg" class="card-img-top" alt="Kayu Tebangan">
+                      <div class="card-body">
+                          <h5 class="card-title">Perikanan</h5>
+                          <p class="card-text">Peningkatan produksi ikan meningkat</p>
+                      </div>
+                  </div></a>
+              </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  </body> 
+      
+    <footer>
+      <div class=" py-4 mt-5 " style="background-color:#12124F">
+        <div class="footer_info">
+          <div class="footer width about">
+            <h2 style="color: white;">Tentang Kami</h2>
+            <p>Selamat datang di portal Open Data Kota Cerdas Jayapura! Kami percaya bahwa transparansi dan akses terbuka terhadap data publik adalah kunci untuk menciptakan kota yang lebih cerdas, inklusif, dan inovatif. Melalui platform ini, kami menyediakan berbagai dataset yang dapat diakses secara bebas oleh semua pihak, mulai dari pemerintah, masyarakat, hingga pengembang aplikasi.</p>
+           <div class="socialmedia">
+            <ul>
+              <img src="4x/IG@4x.png" alt="" style="height: 50px; padding-right: 20px;">
+              <img src="4x/FACEBOOK@4x.png" alt="" style="height: 50px; padding-right: 20px;">
+              <img src="4x/X@4x.png" alt="" style="height: 50px; padding-right: 20px;">
+            </ul>
+          </div>
+          </div>
+          <div class="footer width link">
+          </div>
+          <div class="footer width contact">
+            <h2>Kontak Kami</h2>
+            <p>Jl. Sosial Padang Bulan, Hedam, Kec. Abepura, Kota Jayapura, Papua 99352</p>
+            <p>Indonesia</p>
+            <p>SmartJayapura@gmail.com</p>
+            <p>089522104312</p>
+            <p style="color: aqua;"> PERINGATAN WEB INI HANYA REKAYASA SEMATA! </p>
+            <p style="color: aqua;"> SEMUA GAMBAR DAN DATA DIMILIKI OLEH PEMILIK GAMBAR DAN DATA *BUKAN OLEH DEVELOPER WEB INI*</p>
+          </div>
+        </div>
+    </div>
+    </footer>
+</html>
